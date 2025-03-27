@@ -1,5 +1,5 @@
 // API配置
-const API_KEY = 'Bearer sk-348ebbb43a4e4f46b6f561f7c87e####';
+const API_KEY = process.env.API_KEY || '';
 const API_URL = 'https://api.deepseek.com/chat/completions';
 
 // DOM元素
