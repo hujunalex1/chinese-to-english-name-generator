@@ -15,10 +15,11 @@
     --shadow-color: rgba(0, 0, 0, 0.05);
     --card-bg: #ffffff;
     --transition: all 0.3s ease;
+    --main-font: "Maple Mono", "SF Pro Display", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-    font-family: "SF Pro Display", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: var(--main-font);
     background: var(--secondary-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -164,6 +165,16 @@ button:active {
     display: none;
     margin-top: 2rem;
     animation: fadeIn 0.5s ease-out;
+}
+
+/* 确保所有中文文本使用 Maple Mono 字体 */
+h1, h2, h3, p, input, button, .alert-content p, #alertMessage, .meaning {
+    font-family: var(--main-font);
+}
+
+/* 特别强调中文文本部分 */
+.chinese-text {
+    font-family: "Maple Mono", monospace !important;
 }
 
 .name-card {
