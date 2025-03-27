@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中文名转英文名生成器 | 基于DeepSeek V3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 中文名转英文名生成器</h1>
+            <p>输入您的中文名，获取由 DeepSeek AI 生成的富有文化内涵的英文名</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <input type="text" id="chineseName" placeholder="例如：李明，王芳，张伟..." required>
+                <button id="generateBtn">
+                    <i class="fas fa-magic"></i> 生成英文名
+                </button>
+            </div>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>正在使用 DeepSeek V3 AI 分析您的中文名并生成英文名...</p>
+            </div>
+
+            <div class="results" id="results">
+                <!-- 结果将通过JavaScript动态插入 -->
+            </div>
+            
+            <!-- 自定义弹窗 -->
+            <div class="custom-alert" id="customAlert">
+                <div class="alert-content">
+                    <i class="fas fa-info-circle"></i>
+                    <p id="alertMessage"></p>
+                    <button id="alertCloseBtn">确定</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                <i class="fas fa-robot"></i> 基于 DeepSeek V3 AI 模型，融合中国传统文化元素
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
